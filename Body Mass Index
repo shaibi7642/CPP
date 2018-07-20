@@ -1,0 +1,35 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+int main()
+{
+	float BMI,WIK,HIM,HIF;
+	cout<<"enter the weight of person in Kilograms"<<endl;
+	cin>>WIK;
+	//WIK is weight in Kilograms
+	cout<<"enter the height of person in feets"<<endl;
+	cin>>HIF;
+	//HIF is height in feets
+	HIM=HIF*0.3048;
+	//HIM is height in meters
+	BMI=WIK/(HIM*HIM);
+	//BMI is body mass index
+	cout<<"BMI of person is="<<BMI<<endl;
+	if (BMI<18.5)
+	{
+		cout<<"you are underweight"<<endl;
+	}
+	else if (BMI>18.5 && BMI<24.9)
+	{
+		cout<<"you are normal"<<endl;
+	}
+	else if (BMI>25 && BMI<29.9)
+	{
+		cout<<"you are overweight"<<endl;
+	}
+	else if (BMI>30)
+	{
+		cout<<"you are obese"<<endl;
+	}
+	return 0;
+	}
